@@ -1,0 +1,38 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.qr-contaier {
+    width: 20rem;
+    height: 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+.container-text {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 0.6rem;
+
+}
+
+.container-text>p {
+    margin-top: 1rem;
+}

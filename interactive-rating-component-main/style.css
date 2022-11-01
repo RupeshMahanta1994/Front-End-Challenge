@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 25rem;
+    height: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: hsl(213, 19%, 18%);
+
+}
+
+.card-front {
+    color: #fff;
+}
+
+.image {
+    width: 2rem;
+    height: 2rem;
+    background-color: hsl(216, 12%, 54%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front>h1 {
+    margin: 1rem 0;
+}
+
+.card-front>p {
+    margin-bottom: 2rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.card-front>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.card-front>ul>li {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 54%);
+}
+
+.card-front>ul>li:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+
+}
+
+button {
+    margin-top: 2rem;
+    width: 100%;
+    height: 3rem;
+    padding: 0.9rem 0;
+    border-radius: 10rem;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+
+/*----- Container Back ---------*/
+
+.container-back {
+    width: 25rem;
+    height: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: hsl(213, 19%, 18%);
+
+}
+
+.back-image {
+    margin-bottom: 1rem;
+}
+
+.rating-result {
+    color: hsl(25, 97%, 53%);
+    padding: 0.5rem 0;
+    background-color: hsl(219, 12%, 23%);
+    margin-top: 1.5rem;
+    margin: 0 3rem;
+    border-radius: 10rem;
+}
+
+.container-back>h1 {
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.thank-u-message {
+    color: rgb(111, 116, 124);
+    margin-top: 1.4rem;
+    line-height: 1.5rem;
+}
+
+.active {
+    display: none;
+}
