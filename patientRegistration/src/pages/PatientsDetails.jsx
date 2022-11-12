@@ -1,6 +1,6 @@
 import React from 'react'
 import Patient from './Patient'
-import { getDocs, collection, doc } from "firebase/firestore"
+import { getDocs, collection, doc, deleteDoc } from "firebase/firestore"
 import { db, auth } from '../FirebaseConfig'
 import "./style.css"
 import { useEffect } from 'react'
@@ -15,11 +15,17 @@ function PatientsDetails() {
         const getPatientDetails = async () => {
             const data = await getDocs(patientCollectionRef);
             {/* setPatientList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id }))); */ }
-            setPatientList(data.docs.map((doc) => ({ ...doc.data() })));
+            setPatientList(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
             console.log(patientList);
         };
         getPatientDetails();
     }, []);
+
+    const deletePatient = async (id) => {
+        const patientDoc = doc(db, "patientDetails", id);
+        await deleteDoc(patientDoc);
+
+    }
     return (
         <div className="Background">
             <h1>Welcome to Bharati's Dental Care</h1>
@@ -30,6 +36,7 @@ function PatientsDetails() {
                         <p>Diagnosed by: {patient.docName}</p>
                         <p>Objective Symptoms: {patient.objectiveSymp}</p>
                         <p>Subjective Symptoms: {patient.subjectiveSymp}</p>
+                        <button className='deleteBtn' onClick={() => { deletePatient(patient.id) }}>X</button>
                     </div>
                 )
             })}
