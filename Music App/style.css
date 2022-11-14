@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.color-red {
+    color: rgb(248, 48, 48);
+}
+
+ul {
+    list-style: none;
+}
+
+.navBar {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    position: absolute;
+
+}
+
+.navBar-logo {
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+}
+
+.navBar-items ul {
+    display: flex;
+    align-items: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.navBar-items ul li {
+    padding: 0 50px;
+    font-size: 25px;
+}
+
+/*-----Media Query for NavBar--------*/
+@media only screen and (max-width: 1024px) {
+
+
+    .navBar-items ul li {
+        padding: 0 40px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .navBar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        padding: 0 0 0 20px;
+    }
+
+    .navBar-items ul {
+        display: none;
+    }
+}
+
+/*-----/Media Query for NavBar--------*/
+
+/* Hero Section */
+
+.herosection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 150px;
+    color: #fff;
+}
+
+
+
+.herosection h1 {
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+    line-height: 75px;
+    letter-spacing: 2px;
+}
+
+.herosection-image img {
+    width: 500px;
+    box-shadow: 0px -17px 279px 38px rgba(255, 9, 0, 0.57);
+    border-radius: 30px;
+}
+
+
+.herosection p {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    margin: 20px 0;
+}
+
+.option-btn {
+    margin-top: 15px;
+}
+
+button {
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(248, 48, 48);
+    color: #fff;
+}
+
+/*----------Media Query for Herosection-------*/
+@media only screen and (max-width: 1024px) {
+
+    .herosection {
+        display: flex;
+        justify-content: space-between;
+        padding: 90px;
+        color: #fff;
+    }
+
+    .herosection h1 {
+        font-size: 40px;
+        line-height: 60px;
+        letter-spacing: 2px;
+    }
+
+    .herosection-image img {
+        width: 400px;
+    }
+
+    .herosection button {
+        font-size: 16px;
+        padding: 15px;
+
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .herosection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .herosection h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .herosection p {
+        font-size: 17px;
+    }
+
+    .option-btn {
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px;
+
+    }
+
+    .option-btn button {
+        padding: 10px;
+        margin-bottom: 15px;
+        font-size: 15px;
+
+    }
+
+}
+
+/*----------/Media Query for Herosection-------*/
+
+/* Testimonial section */
+
+
+
+
+/*------Footer-------*/
+.footer {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 40px;
+    background-color: rgb(107, 102, 102);
+    color: #fff;
+}
+
+.footer-menu-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-items ul {
+    display: flex;
+    align-items: center;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.footer-items ul li {
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.footer-links ul {
+    display: flex;
+
+}
+
+.footer-links ul li {
+    padding: 0 10px;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 380px) {
+    .footer {
+        text-align: center;
+        height: 600px;
+        justify-content: center;
+        background-color: rgb(38, 36, 36);
+    }
+
+    .footer-menu-bar {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-menu-bar .navBar-logo a {
+        color: red;
+    }
+
+    .footer-items ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-items ul li {
+        margin-bottom: 15px;
+    }
+
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-links p {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+        margin: 0 auto;
+    }
+}
+
+/*---------Media Query for Footer-------*/
+
+/*---------/Media Query for Footer-------*/
+
+
+
+/*-----------Get In touch----------*/
+
+.get-in-touch {
+    width: 100%;
+    margin: 50px 0;
+    padding: 150px;
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.get-in-touch .text-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch h4 {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.get-in-touch h1 {
+    font-size: 60px;
+    font-weight: 650;
+    margin-bottom: 20px;
+    line-height: 50px;
+    font-family: 'Pacifico', cursive;
+}
+
+.get-in-touch h3 {
+    letter-spacing: 1.8px;
+    line-height: 35px;
+}
+
+.get-in-touch form {
+    display: flex;
+    flex-direction: column;
+}
+
+.get-in-touch form input {
+    width: 300px;
+    background: transparent;
+    border: none;
+    background-color: rgb(87, 84, 84);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.get-in-touch form input::placeholder {
+    color: rgb(161, 156, 156);
+}
+
+
+.get-in-touch textarea {
+    background: transparent;
+    border: none;
+    background-color: rgb(87, 84, 84);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.get-in-touch form textarea::placeholder {
+    color: rgb(161, 156, 156);
+}
+
+/*----------Media query for Get In TOuch ---------*/
+@media only screen and (max-width: 380px) {
+    .get-in-touch {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .get-in-touch h4 {
+        font-size: 20px;
+    }
+
+    .get-in-touch h1 {
+        font-size: 35px;
+        font-weight: 650;
+        margin-bottom: 20px;
+        line-height: 35px;
+    }
+
+    .get-in-touch h3 {
+        letter-spacing: 1.2px;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    form {
+        width: 200px;
+    }
+}
+
+/*----------/Media query for Get In TOuch ---------*/
