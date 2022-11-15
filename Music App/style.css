@@ -76,7 +76,7 @@ ul {
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
     .navBar {
         display: flex;
         align-items: center;
@@ -203,7 +203,7 @@ button {
     }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
     .herosection {
         display: flex;
         flex-direction: column;
@@ -291,7 +291,7 @@ button {
     font-size: 40px;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
     .footer {
         text-align: center;
         height: 600px;
@@ -408,7 +408,7 @@ button {
 }
 
 /*----------Media query for Get In TOuch ---------*/
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 500px) {
     .get-in-touch {
         width: 100%;
         padding: 20px;
