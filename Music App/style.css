@@ -4,11 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
     color: #fff;
+    overflow-x: hidden;
 }
+
+
 
 a {
     text-decoration: none;
@@ -52,6 +61,10 @@ ul {
     font-size: 25px;
 }
 
+.menu-btn {
+    display: none;
+}
+
 /*-----Media Query for NavBar--------*/
 @media only screen and (max-width: 1024px) {
 
@@ -72,7 +85,33 @@ ul {
     }
 
     .navBar-items ul {
-        display: none;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        background-color: rgb(28, 28, 30);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 20px;
+        transform: translateX(100%);
+        transition: all 0.4s ease-in-out;
+    }
+
+    .active ul {
+        transform: translateX(0);
+    }
+
+
+    .navBar-items ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu-btn {
+        display: block;
+        margin-right: 50px;
+        font-size: 25px;
+
     }
 }
 
