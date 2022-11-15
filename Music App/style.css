@@ -42,6 +42,7 @@ ul {
     justify-content: space-between;
     padding: 0 120px;
     position: absolute;
+    z-index: 10;
 
 }
 
@@ -128,6 +129,16 @@ ul {
     padding: 150px;
     color: #fff;
 }
+
+/*-------hero section animantion-------*/
+
+
+/*-------hero section animantion-------*/
+
+/*-----hero section text animation---*/
+
+
+/*-----hero section text animation---*/
 
 
 
