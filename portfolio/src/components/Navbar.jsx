@@ -26,10 +26,10 @@ function Navbar() {
                     <img src={Img1} alt="" />
                 </div>
                 <ul>
-                    <li>home</li>
+                    <li><HashLink to="#home">home</HashLink></li>
                     <li><HashLink to="#aboutMe">about me</HashLink></li>
-                    <li>eduction</li>
-                    <li>projects</li>
+                    <li><HashLink to="#education">about me</HashLink></li>
+                    <li><HashLink to="#projects">projects</HashLink></li>
 
                 </ul>
             </div>

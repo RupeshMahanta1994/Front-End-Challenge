@@ -5,7 +5,7 @@ function MyIntro() {
     return (
         <>
             <div>
-                <div className="container">
+                <div className="container" id="home">
 
                     <div className="container-text">
                         <h2>Hello! <br />
@@ -22,6 +22,12 @@ function MyIntro() {
                 </div>
                 <div className="container" id='aboutMe'>
                     About Me
+                </div>
+                <div className="container" id='education'>
+                    education
+                </div>
+                <div className="container" id='projects'>
+                    Projects
                 </div>
             </div>
         </>
