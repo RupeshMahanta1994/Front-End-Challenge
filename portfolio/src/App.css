@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 62.5%;
+    background-color: rgb(238, 237, 237);
+
+}
+
+.color-crimson {
+    color: crimson;
+}
+
+.navBar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4rem;
+    padding: 0rem 8rem;
+}
+
+.navBar-logo {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.navBar-icon {
+    z-index: 2;
+    font-size: 3.5rem;
+}
+
+.navLinks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(238, 237, 237);
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    z-index: 1;
+}
+
+#active {
+    transform: translateX(0);
+}
+
+.navLinks .navLinks-image {
+    width: 50%;
+
+}
+
+.navLinks .navLinks-image img {
+    cursor: pointer;
+}
+
+.navLinks ul {
+    width: 50%;
+    font-size: 8rem;
+    padding-left: 8rem;
+}
+
+/*-------Media Query for Navbar------*/
+
+@media only screen and (max-width: 600px) {
+    .navBar {
+        padding: 1rem 3rem;
+    }
+
+    .navLinks-image {
+        display: none;
+    }
+
+    .navLinks {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navLinks ul {
+        padding-left: 0;
+    }
+}
+
+/*-------/Media Query for Navbar------*/
+
+/*------Home Page Design--------*/
+.container {
+    background-color: rgb(238, 237, 237);
+
+    width: 150rem;
+    height: 64rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border: 2rem solid #fff;
+    padding: 2rem 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+
+}
+
+.container-text {
+    width: 60%;
+}
+
+.container-text h2 {
+    font-size: 7rem;
+    line-height: 6.5rem;
+    margin-bottom: 4rem;
+    font-weight: bold;
+}
+
+.container-text p {
+    font-size: 2rem;
+    color: crimson;
+}
+
+
+
+.container-image img {
+    width: 60rem;
+    height: 70rem;
+
+}
+
+/*----Responsive design-----*/
+@media only screen and (max-width: 500px) {
+    .container {
+        background-color: rgb(238, 237, 237);
+        width: 35rem;
+        height: 45rem;
+        border: 1.5rem solid #fff;
+        margin-bottom: 1rem;
+        position: relative;
+        overflow: hidden;
+
+
+    }
+
+    .container-text {
+        width: 80%;
+        position: absolute;
+        top: 3rem;
+        left: 2rem;
+    }
+
+    .container-text h2 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .container-text p {
+        width: 55%;
+        font-size: 1.8rem;
+    }
+
+    .container-image img {
+        width: 20rem;
+        height: 28rem;
+        position: absolute;
+        right: -4rem;
+        bottom: 0;
+        opacity: 1;
+
+    }
+}
+
+/*----Responsive design-----*/
+
+/*------Home Page Design--------*/
