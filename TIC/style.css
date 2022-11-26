@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: 1.125rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    width: 100%;
+    padding: 1em 5%;
+    background-color: azure;
+    position: fixed;
+}
+
+nav .navbar-logo {
+    font-size: 2rem;
+}
+
+nav .navbar-logo span {
+    width: 5rem;
+    height: 5rem;
+}
+
+.navbar-items,
+.navbar-social-section {
+    display: none;
+}
+
+/*----Home Page-----*/
+.home-page {
+    height: 100vh;
+    background-color: bisque;
+
+}
+
+.home-page-text {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 10em;
+
+}
+
+.home-page-title h2 {
+    font-size: 2.6rem;
+}
+
+.home-page-title p {
+    font-size: 1.4rem;
+}
+
+.home-page-action {
+    margin-top: 5em;
+}
+
+.home-page-venue p {
+    font-size: 1.3rem;
+    padding: 0.5em;
+    text-transform: uppercase;
+    border-left: 1px solid rgb(20, 19, 19);
+    display: inline-block;
+}
+
+.home-page-action a {
+    font-size: 1.2rem;
+    color: black;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 0.9em 1.2em;
+    margin-top: 0.2em;
+    background-color: #fff;
+}
+
+/*----/Home Page-----*/
+
+
+/*-----Speaker Section------*/
+
+
+/*-----/Speaker Section------*/

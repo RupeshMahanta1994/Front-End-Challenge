@@ -177,3 +177,32 @@
 /*----Responsive design-----*/
 
 /*------Home Page Design--------*/
+
+
+/*---------About Me -----------*/
+.aboutme {
+    display: flex;
+
+}
+
+.heading {
+
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    background-color: red;
+
+
+}
+
+.personal-details {}
+
+.personal-details table {
+    font-size: 10rem;
+    background-color: red;
+}
+
+.short-description {
+    font-size: 4rem;
+}
+
+/*--------- About Me ------------*/
