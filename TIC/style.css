@@ -10,12 +10,28 @@ body {
     font-size: 1.125rem;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+a {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
 
 ul {
     list-style: none;
+}
+
+.color-purple {
+    color: blueviolet;
 }
 
 .display-flex {
@@ -54,7 +70,7 @@ nav .navbar-logo span {
 
 .home-page-text {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 2em;
     padding-top: 10em;
 
 }
@@ -93,6 +109,69 @@ nav .navbar-logo span {
 
 
 /*-----Speaker Section------*/
+.speakers-section {
+    width: 100%;
+    background-color: rgb(205, 224, 231);
+}
 
+.section-heading {
+    margin: 0 2em;
+    padding: 1.5em 0;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.section-heading p {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    color: blueviolet;
+    letter-spacing: 0.1rem;
+}
+
+.speaker {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.speaker .speaker-picture img {
+
+    width: 65%;
+    object-fit: contain;
+}
+
+.speaker .speaker-picture {
+    order: 1;
+    margin-bottom: 1.5em;
+}
+
+.speaker .speaker-profession {
+    order: 2;
+    margin: 0 2em;
+    margin-bottom: 0.3em;
+    text-transform: capitalize;
+}
+
+.speaker .speaker-bio {
+    margin: 0 2em;
+    order: 3;
+}
+
+.speaker-bio h2 {
+    margin-bottom: 0.3em;
+}
+
+.speaker-bio h4 {
+    margin-bottom: 1.5em;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+}
+
+.speaker-bio p {
+    letter-spacing: 0.09rem;
+}
 
 /*-----/Speaker Section------*/
