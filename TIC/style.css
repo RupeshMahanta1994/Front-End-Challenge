@@ -35,16 +35,7 @@ ul {
     color: blueviolet;
 }
 
-button {
-    font-size: 1.2rem;
-    text-transform: c;
-    color: #fff;
-    display: block;
-    border-radius: 0.5rem;
-    padding: 0.9em 1.2em;
-    margin: 0 auto;
-    background-color: blueviolet;
-}
+
 
 .display-flex {
     display: flex;
@@ -250,7 +241,7 @@ table {
 }
 
 table tr td {
-
+    text-transform: capitalize;
     padding: 1em;
     border-bottom: 1px solid grey;
 }
@@ -343,6 +334,80 @@ table tr td:nth-child(-1) {
 footer {
     background-color: rgb(61, 45, 74);
     color: #fff;
+    padding: 2em;
 }
+
+.footer-title {
+    padding-bottom: 2em;
+    border-bottom: 1px solid grey;
+}
+
+.footer-venue-details {
+    padding: 2em 0;
+    border-bottom: 1px solid grey;
+}
+
+article {
+    margin-bottom: 1em;
+}
+
+footer h1 {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+}
+
+footer p {
+    color: rgb(215, 211, 211);
+    font-size: 1.1rem;
+    letter-spacing: 0.09rem;
+}
+
+.footer-venue-details button {
+    text-transform: capitalize;
+}
+
+.contact-us-title {
+    margin: 1.2em 0;
+}
+
+.footer-contact-us form input {
+    width: 100%;
+    padding: 1.3em;
+    border-radius: 0.4rem;
+    border: 1px solid rgb(215, 211, 211);
+    background: transparent;
+}
+
+.footer-contact-us form input::placeholder {
+    text-transform: capitalize;
+    text-align: center;
+    color: rgb(215, 211, 211);
+}
+
+.footer-contact-us form button {
+    width: 100%;
+    margin-top: 0.5em;
+    background: transparent;
+    padding: 1em;
+    color: rgb(215, 211, 211);
+    border: 1px solid rgb(215, 211, 211);
+    border-radius: 0.4rem;
+}
+
+.footer-social-links {
+    text-align: center;
+    padding-top: 2em;
+}
+
+.footer-social-links a {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.footer-social-links a:nth-child(2) {
+    margin: 0 1em;
+}
+
 
 /*------footer----*/
