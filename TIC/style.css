@@ -145,6 +145,16 @@ nav .navbar-logo span {
     padding-bottom: 2em;
 }
 
+@media screen and (min-width: 500px) {
+    .speaker {
+
+
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0em;
+    }
+}
+
 .speaker .speaker-picture img {
 
     width: 15em;
