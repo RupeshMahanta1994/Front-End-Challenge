@@ -78,12 +78,29 @@ nav .navbar-logo span {
 
 }
 
+@media (min-width: 500px) {
+    .home-page-text {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
 .home-page-title h2 {
     font-size: 2.6rem;
 }
 
 .home-page-title p {
     font-size: 1.4rem;
+}
+
+@media (min-width:500px) {
+    .home-page-title h2 {
+        font-size: 6rem;
+    }
+
+    .home-page-title p {
+        font-size: 2rem;
+    }
 }
 
 .home-page-action {
@@ -109,6 +126,15 @@ nav .navbar-logo span {
     padding: 0.9em 1.2em;
     margin-top: 0.2em;
     background-color: #fff;
+}
+
+@media (min-width:500px) {
+    .home-page-action {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
 }
 
 /*----/Home Page-----*/
@@ -292,13 +318,32 @@ table tr td:nth-child(-1) {
 
 .agenda button {
     font-size: 1.2rem;
-    text-transform: c;
+    text-transform: capitalize;
     color: #fff;
     display: block;
     border-radius: 0.5rem;
     padding: 0.9em 1.2em;
     margin: 0 auto;
     background-color: blueviolet;
+}
+
+@media (min-width: 500px) {
+    .event-details {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .type {
+        width: 30%;
+        border-right: 1px solid blueviolet;
+        border-bottom: none;
+    }
+
+    .type:last-child {
+        border-right: none;
+    }
+
 }
 
 /*---/agenda section-----*/
